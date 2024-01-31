@@ -15,10 +15,10 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotBlank(message = "O atributo nome não pode estar vazio!")
+	@NotBlank(message = "O atributo nome não pode ser vazio!")
 	private String nome;
 	
-	@NotBlank(message = "O atributo descrição não pode estar vazio!")
+	@NotBlank(message = "O atributo descrição não pode ser vazio!")
 	private String descricao;
 
 	public long getId() {
