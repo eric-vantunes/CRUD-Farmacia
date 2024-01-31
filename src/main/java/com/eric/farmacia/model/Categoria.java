@@ -20,6 +20,15 @@ public class Categoria {
 	
 	@NotBlank(message = "O atributo descrição não pode ser vazio!")
 	private String descricao;
+	
+	public Categoria(long id, String nome, String descricao) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.descricao = descricao;
+	}
+	
+	public Categoria() {}
 
 	public long getId() {
 		return id;
